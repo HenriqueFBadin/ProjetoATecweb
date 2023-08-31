@@ -1,0 +1,39 @@
+<!-- <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="card">
+            <h3 class="card-title">{title}</h3>
+            <div class="card-content">
+                <p>
+                {details}
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="flip-card-back">
+        <div class="card">
+            <h3 class="card-title">{title}</h3>
+            <div class="card-content">
+                <p>
+                {details}
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div> -->
+
+<div class="card">
+    <div class="first-row">
+        <h3 class="card-title">{title}</h3>
+        <form action="/delete/{id}" method="post">
+            <button class="delete-button">x</button>
+        </form>
+    </div>
+    <div class="card-content">
+        <p>
+        {details}
+        </p>
+        <a class="edit-button" href="edit/{id}">Editar</a>
+    </div>
+</div>
