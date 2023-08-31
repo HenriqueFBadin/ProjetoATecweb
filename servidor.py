@@ -34,11 +34,8 @@ while True:
         print("Entrou no delete")
         response = index(request)
         print(response)
-    elif 'edit' in route:
-        response = edit(request)
 
-    elif 'updateRequest' in route:
-        print("Entrou no update")
+    elif 'edit' in route:
         response = edit(request)
 
     elif 'cancelar' in route:

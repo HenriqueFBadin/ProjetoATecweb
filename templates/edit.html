@@ -27,13 +27,12 @@
               class="form-card-title"
               type="text"
               name="titulo"
-              placeholder={note_title}
+              value="{note_title}"
             />
             <textarea
               class="autoresize"
               name="detalhes"
-              placeholder={note_details}
-            ></textarea>
+            >{note_details}</textarea>
             <button class="btn" type="submit">Editar</button>
             <a class="cancel-btn" href="/">Cancelar</a>
         </form>

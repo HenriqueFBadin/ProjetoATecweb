@@ -85,18 +85,18 @@ def edit(request):
                 conteudo = urllib.parse.unquote_plus(valor)
                 print(conteudo)
 
+        note = db.get(int(id_card))
+
+        if(titulo == '' and conteudo == ''):
+            titulo = note.title
+            conteudo = note.content
+        elif(titulo == ''):
+            titulo = note.title
+        elif(conteudo == ''):
+            conteudo = note.content
+
         db.update(Note(title=titulo, content=conteudo, id=id_card))
         print(db.update(Note(title=titulo, content=conteudo, id=id_card)))
-
-        note_template = load_template('components/note.html')
-        notes_li = [
-            note_template.format(
-                title=dados.title, details=dados.content, id=dados.id)
-            for dados in db.get_all()
-        ]
-
-        notes = '\n'.join(notes_li)
-
         return build_response(code=303, reason='See Other', headers='Location: /')
 
     id_card = int(id_card)

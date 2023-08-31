@@ -225,6 +225,8 @@ body {
   outline: none;
   border: 0px;
   resize: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card-color-1{
