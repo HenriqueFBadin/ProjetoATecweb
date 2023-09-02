@@ -1,34 +1,8 @@
-/*
-Algumas informações úteis e dicas:
-  - Fontes disponíveis:
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Permanent Marker', cursive;
-  - Cores:
-    Tons de amarelo:
-      #e4fc2b
-      #e0d426
-      #f7d736
-      #e0af26
-      #fcb02b
-    Tons de cinza:
-      #2c2c2c
-      #4c4c4c
-    Cores dos cards:
-      #ead3a7
-      #9de0f5
-      #ef89ba
-      #fae890
-      #abe9c1
-  - Sombra: https://codepen.io/sdthornton/pen/wBZdXq
- */
-
 html,
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Você pode usar o CSS comentado abaixo, se ajudar */
-/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
 .btn {
   position: relative;
   display: block;
@@ -135,58 +109,14 @@ body {
   flex-direction: column;
   margin: 2%;
   width: min-content;
+  min-width: 10rem;
   height: min-content;
+  min-height: 6rem;
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   justify-content: space-around;
   transition: transform 0.3s ease;
 }
-
-/*
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover
-.flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-  width: 10rem;
-  height: 6rem;
-  border-radius: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  justify-content: space-around;
-}
-
-.flip-card-back {
-  transform: rotateY(180deg); 
-}
-*/
 
 .card-title {
   display: flex;
@@ -208,8 +138,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  word-wrap: break-word;
-  overflow: auto;
+  word-break: break-word;
 }
 
 .form-card-title {
