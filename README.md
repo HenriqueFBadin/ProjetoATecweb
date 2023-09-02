@@ -10,7 +10,7 @@ O Projeto Individual A de Tecweb é uma aplicação de página de lembretes que 
 
 - **Excluir Lembretes:**
 
-## Como Usar
+## Avaliação
 
 Nesse repositório foram realizadas as entregas do Handout 01, das 4 tarefas pedidas na rubrica funcionando corretamente e a adição da página de erro.
 
