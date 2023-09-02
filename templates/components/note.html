@@ -1,39 +1,14 @@
-<!-- <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <div class="card">
-            <h3 class="card-title">{title}</h3>
-            <div class="card-content">
-                <p>
-                {details}
-                </p>
-            </div>
-        </div>
-      </div>
-      <div class="flip-card-back">
-        <div class="card">
-            <h3 class="card-title">{title}</h3>
-            <div class="card-content">
-                <p>
-                {details}
-                </p>
-            </div>
-        </div>
-      </div>
-    </div>
-</div> -->
-
 <div class="card">
     <div class="first-row">
         <h3 class="card-title">{title}</h3>
-        <form action="/delete/{id}" method="post">
-            <button class="delete-button">x</button>
-        </form>
+        <div style="display: flex; flex-direction: row;">
+            <a href="edit/{id}"><img src ='/img/edit-icon.png' class="imagem-edit"></a>
+            <a class="delete-button" href="/delete/{id}"><img src="/img/delete.png" style="width: 1rem; height: 1rem; margin: 0.5rem;"></a>
+        </div>
     </div>
     <div class="card-content">
         <p>
         {details}
         </p>
-        <a class="edit-button" href="edit/{id}">Editar</a>
     </div>
 </div>
