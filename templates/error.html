@@ -1,28 +1,83 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Get-it</title>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-          crossorigin="anonymous"
-        />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto&family=Permanent+Marker&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="/getit.css" />
-        </head>
-    <body>
-        <div class="appbar">
-            <img src="img/logo-getit.png" class="logo" />
-            <span class="subtitle">Como o Post-it, mas com outro verbo</span>
-        </div>
-        <main>
-            <img src="/img/error404.jpg" style="width:100%;">
-        </main>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #777;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .appbar {
+        background-color: #f7d736;
+        display: flex;
+        box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, 0.2), 0 6px 20px 0px rgba(0, 0, 0, 0.19);
+        flex-direction: row;
+        margin-top: 0.2%;
+        }
+
+        .logo {
+        width: 7%;
+        height: auto;
+        display: flex;
+        margin: 0.5% 0.5% 0.5% 0;
+        }
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="appbar">
+    <img src="img/logo-getit.png" class="logo" />
+    <span class="subtitle">Como o Post-it, mas com outro verbo</span>
+</div>
+
+<main>
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! The page you are looking for could not be found.</p>
+        <p>Return to <a href="/">Homepage</a></p>
+        <img src="../img/john-travolta-error.gif" alt="Hovered GIF">
+    </div>
+</main>
+
+</body>
+    
+</html>
